@@ -4,4 +4,4 @@ These are keyboard shortcuts that i use. They range from basic dialy usage to pr
 
 ## Note:
 
-** These keyboard cuts are free (like free air) for any to share,copy, modify and improve.
+**These keyboard shortcuts are free *(like free air)* for all persons to share,copy, modify and improve.**
