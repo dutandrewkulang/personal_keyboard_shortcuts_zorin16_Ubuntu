@@ -1,0 +1,54 @@
+# Note that am using the bashrc file which is not adviced because it also contains sample system settings that shouldn't be messed around with.
+# SO TAKE CARE
+# <---------------------------------------------------------------------------------------------------------------------------------------------->
+
+alias mycuts="nano ~/.bashrc"
+# Compile and run C
+cr(){
+gcc "$1" && ./a.out
+}
+
+#Django shortcut commands
+alias djall="cd /home/dukula/Area && source myenv/bin/activate"
+alias djno="deactivate"
+alias dje="cd ~ && cd Area && source djenv/bin/activate"
+alias myev="cd ~ && cd Area && source myenv/bin/activate"
+alias djr="python3 manage.py runserver"
+alias djmm="python manage.py makemigrations"
+alias djm="python manage.py migrate"
+djp(){
+django-admin startproject "$1"
+#add $2 with commas
+}
+#django-admin startproject "$1 add comma here
+
+dja(){
+python manage.py startapp "$1"
+}
+alias djsu="python manage.py createsuperuser"
+alias djs='python manage.py shell'
+alias py="python3"
+# make migrations and migrate and create super user
+
+alias djmsu="djmm && djm && djsu"
+alias djmmm="djmm && djm"
+
+#In Here to launchs a window for the current file path
+alias ih="xdg-open ."
+
+# shutdown computer
+alias die="shutdown now"
+
+# Back upwards
+alias bk="cd .."
+#js run time using nodeJS
+alias js="node"
+#VScode
+alias vs="code ."
+#Jupyter notebook and Lab commands.
+alias jnb="jupyter notebook"
+alias jlb="jupyter lab"
+#---------------------------------------------------------------
+#Xampp commands
+alias myx="sudo service mysql stop && sudo /etc/init.d/apache2 stop && sudo /opt/lampp/lampp start"
+#---------------------------------------------------------------
